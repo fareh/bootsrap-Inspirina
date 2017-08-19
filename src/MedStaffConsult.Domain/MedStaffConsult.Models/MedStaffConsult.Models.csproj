@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MedStaffConsult.Storage\MedStaffConsult.Storage.Abstraction.csproj" />
+    <ProjectReference Include="..\..\MedStaffConsult.Storage\MedStaffConsult.Storage.Abstraction\MedStaffConsult.Storage.Abstraction.csproj" />
   </ItemGroup>
 
 </Project>

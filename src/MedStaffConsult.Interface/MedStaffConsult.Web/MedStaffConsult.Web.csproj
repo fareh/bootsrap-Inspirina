@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MedStaffConsult.Models\MedStaffConsult.Models.csproj" />
-    <ProjectReference Include="..\MedStaffConsult.Storage.Implementation\MedStaffConsult.Storage.Implementation.csproj" />
+    <ProjectReference Include="..\..\MedStaffConsult.Domain\MedStaffConsult.Models\MedStaffConsult.Models.csproj" />
+    <ProjectReference Include="..\..\MedStaffConsult.Storage\MedStaffConsult.Storage.Implementation\MedStaffConsult.Storage.Implementation.csproj" />
     <ProjectReference Include="..\MedStaffConsult.Web.TagHelper\MedStaffConsult.Web.TagHelper.csproj" />
   </ItemGroup>
 
