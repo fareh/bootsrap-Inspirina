@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  medstaffconsult.web:
+    image: medstaffconsult.web
+    build:
+      context: ./MedStaffConsult.Web
+      dockerfile: Dockerfile
