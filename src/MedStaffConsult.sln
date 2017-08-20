@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedStaffConsult.Storage.Abs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedStaffConsult.Storage.Implementation", "MedStaffConsult.Storage\MedStaffConsult.Storage.Implementation\MedStaffConsult.Storage.Implementation.csproj", "{86B99D2F-F028-44F9-9AB8-55E1FC2AA89E}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MedStaffConsult.Storage.Sql", "MedStaffConsult.Storage.Sql\MedStaffConsult.Storage.Sql.sqlproj", "{217F3DBC-9D14-415A-BB52-2F0C2C9503B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,12 @@ Global
 		{86B99D2F-F028-44F9-9AB8-55E1FC2AA89E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86B99D2F-F028-44F9-9AB8-55E1FC2AA89E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86B99D2F-F028-44F9-9AB8-55E1FC2AA89E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{217F3DBC-9D14-415A-BB52-2F0C2C9503B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{217F3DBC-9D14-415A-BB52-2F0C2C9503B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{217F3DBC-9D14-415A-BB52-2F0C2C9503B8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{217F3DBC-9D14-415A-BB52-2F0C2C9503B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{217F3DBC-9D14-415A-BB52-2F0C2C9503B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{217F3DBC-9D14-415A-BB52-2F0C2C9503B8}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +71,7 @@ Global
 		{ECD17C20-B6AD-4392-9C8C-D1BC07FEEA4E} = {2CF63618-7704-4FE8-9A19-447484ECEFDB}
 		{D4011974-8CC9-4F08-84CE-A3FE5D29F8F3} = {F954C61F-4EAB-4987-BF63-E118C95DEDFC}
 		{86B99D2F-F028-44F9-9AB8-55E1FC2AA89E} = {F954C61F-4EAB-4987-BF63-E118C95DEDFC}
+		{217F3DBC-9D14-415A-BB52-2F0C2C9503B8} = {F954C61F-4EAB-4987-BF63-E118C95DEDFC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {67281BB2-C816-465A-94BF-3A04D0C972BC}

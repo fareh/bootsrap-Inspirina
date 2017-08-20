@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using MedStaffConsult.Models;
 using MedStaffConsult.Storage.Abstraction;
 using Microsoft.AspNetCore.Mvc;
@@ -13,9 +15,16 @@ namespace MedStaffConsult.Web.Controllers
         {
             _docStorage = docStorage;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var t = _docStorage.Get(new List<int>() { 1 });
+            await _docStorage.Set(new Doctor
+            {
+                UId = 5,
+                Name = "BEN AISSA",
+                CreationDate = DateTime.Now,
+                ModificationDate = DateTime.Now
+            });
+            var t = await _docStorage.Find(doctor => doctor.Name == "BEN AISSA");
             return View();
         }
 

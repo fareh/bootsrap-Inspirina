@@ -1,19 +1,28 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace MedStaffConsult.Storage.Abstraction
 {
-    public interface IEntityStorage<T> where T : AbstractEntity
+    public interface IEntityStorage<TEntity> where TEntity : AbstractEntity
     {
-        T Get(int uid);
+        Task<TEntity> Get(int uid);
 
-        void Set(IEnumerable<T> entities);
+        Task Set(IEnumerable<TEntity> entities);
 
-        void Set(T document);
+        Task Set(TEntity document);
 
-        List<T> GetAll();
+        Task<IEnumerable<TEntity>> GetAll();
 
-        List<T> Get(IEnumerable<int> uids);
+        Task<IEnumerable<TEntity>> Get(IEnumerable<int> uids);
 
-        void Remove(int uid);
+        Task Remove(int uid);
+
+        Task Update(TEntity entity);
+
+        Task Update(IEnumerable<TEntity> entities);
+
+        Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity, bool>> predicate);
     }
 }
